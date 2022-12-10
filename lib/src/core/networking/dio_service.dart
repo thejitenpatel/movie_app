@@ -20,7 +20,7 @@ class DioService {
     if (httpClientAdapter != null) _dio.httpClientAdapter = httpClientAdapter;
   }
 
-  void cancelRequest({CancelToken? cancelToken}) {
+  void cancelRequests({CancelToken? cancelToken}) {
     if (cancelToken == null) {
       _cancelToken.cancel("Cancelled");
     } else {
