@@ -28,6 +28,9 @@ class AppThemes {
         color: AppColors.primaryColor,
       )),
       unselectedLabelColor: AppColors.primaryColor.withOpacity(0.5),
+      unselectedLabelStyle: const TextStyle(
+        fontSize: 16,
+      ),
     ),
     appBarTheme: AppBarTheme(
       centerTitle: true,

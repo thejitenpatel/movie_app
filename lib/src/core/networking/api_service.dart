@@ -144,7 +144,6 @@ class ApiService extends ApiInterface {
     required T Function(ResponseModel<JSON> response) converter,
   }) async {
     ResponseModel<JSON> response;
-
     try {
       // Entire map of response
       response = await _dioService.patch<JSON>(
