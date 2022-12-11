@@ -15,9 +15,22 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           icon: const Icon(Icons.search),
         ),
       ],
+      bottom: const TabBar(
+        tabs: [
+          Tab(
+            text: "Movies",
+          ),
+          Tab(
+            text: "TV Shows",
+          ),
+          Tab(
+            text: "People",
+          ),
+        ],
+      ),
     );
   }
 
   @override
-  Size get preferredSize => const Size(double.infinity, 55);
+  Size get preferredSize => const Size(double.infinity, 85);
 }

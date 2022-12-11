@@ -17,6 +17,18 @@ class AppThemes {
     fontFamily: AppTypography.primary.fontFamily,
     textTheme: AppTypography.primary.textTheme,
     scaffoldBackgroundColor: AppColors.whiteColor,
+    tabBarTheme: TabBarTheme(
+      labelColor: AppColors.primaryColor,
+      labelStyle: const TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
+      ),
+      indicator: const UnderlineTabIndicator(
+          borderSide: BorderSide(
+        color: AppColors.primaryColor,
+      )),
+      unselectedLabelColor: AppColors.primaryColor.withOpacity(0.5),
+    ),
     appBarTheme: AppBarTheme(
       centerTitle: true,
       // elevation: 0,

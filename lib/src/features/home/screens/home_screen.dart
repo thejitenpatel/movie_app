@@ -6,9 +6,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: CustomAppBar(),
-      drawer: Drawer(),
+    return DefaultTabController(
+      length: 3,
+      child: const Scaffold(
+        appBar: CustomAppBar(),
+        drawer: Drawer(),
+        
+      ),
     );
   }
 }
